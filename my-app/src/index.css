@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Cosmic Neon Color Palette */
+  --space-black: #00001a;
+  --dark-navy: #0a0a2e;
+  --electric-blue: #00ffff;
+  --vibrant-magenta: #ff00ff;
+  --soft-white: #f0f0f0;
+  --glow-blue: rgba(0, 255, 255, 0.3);
+  --glow-magenta: rgba(255, 0, 255, 0.3);
+  
+  /* Typography */
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  
+  /* Rendering optimizations */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--space-black);
+  color: var(--soft-white);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--space-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, var(--electric-blue), var(--vibrant-magenta));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, var(--vibrant-magenta), var(--electric-blue));
+}
+
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', monospace;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  background: linear-gradient(45deg, var(--electric-blue), var(--vibrant-magenta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--electric-blue);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--vibrant-magenta);
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.7;
+  color: var(--soft-white);
+}
+
+a {
+  color: var(--electric-blue);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--vibrant-magenta);
+  text-shadow: 0 0 10px var(--glow-magenta);
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(45deg, var(--electric-blue), var(--vibrant-magenta));
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: var(--space-black);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px var(--glow-blue);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--electric-blue);
+  padding: 10px 22px;
+  border-radius: 8px;
+  color: var(--electric-blue);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-outline:hover {
+  background: var(--electric-blue);
+  color: var(--space-black);
+  box-shadow: 0 0 20px var(--glow-blue);
+}
+
+/* Focus styles */
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--electric-blue);
+  outline-offset: 2px;
+}
+
+/* Utility classes */
+.text-glow {
+  text-shadow: 0 0 10px currentColor;
+}
+
+.bg-gradient-cosmic {
+  background: linear-gradient(135deg, var(--space-black) 0%, var(--dark-navy) 50%, var(--space-black) 100%);
+}
+
+.border-glow {
+  border: 1px solid var(--electric-blue);
+  box-shadow: 0 0 10px var(--glow-blue);
+}
