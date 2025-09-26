@@ -47,11 +47,11 @@ const About = () => {
             <div className="bg-gradient-to-br from-space-black to-dark-navy border border-electric-blue/20 rounded-2xl p-8 hover:border-electric-blue/40 transition-all duration-300">
               <h3 className="text-2xl font-futuristic font-bold text-vibrant-magenta mb-6">My Journey</h3>
               <p className="text-soft-white/90 leading-relaxed mb-6">
-                With over 5 years of experience in full-stack development, I specialize in creating 
+                 I specialize in creating 
                 robust, scalable web applications that deliver exceptional user experiences. My expertise 
                 spans across modern technologies including <span className="text-electric-blue font-semibold">Laravel</span>, 
                 <span className="text-electric-blue font-semibold">React</span>, 
-                <span className="text-electric-blue font-semibold">Next.js</span>, and 
+                <span className="text-electric-blue font-semibold">Next.js</span> ,and <br></br>
                 <span className="text-electric-blue font-semibold">Odoo</span>.
               </p>
               <p className="text-soft-white/90 leading-relaxed mb-6">
@@ -79,7 +79,7 @@ const About = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-4">
+            {/* <div className="grid grid-cols-2 gap-4">
               {stats.map((stat, index) => (
                 <div 
                   key={stat.label}
@@ -93,7 +93,7 @@ const About = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column - Education & Professional Timeline */}
@@ -130,7 +130,7 @@ const About = () => {
                      <h4 className="text-xl font-futuristic font-bold text-soft-white mb-2">
                        Stage en Développement Web (6 mois - En cours)
                      </h4>
-                     <p className="text-electric-blue font-semibold mb-2">Entreprise Partenaire • 2025</p>
+                     <p className="text-electric-blue font-semibold mb-2">BRAMS • 2025</p>
                      <p className="text-soft-white/80 leading-relaxed">
                        Développement de projets d'interfaces utilisateur et création d'une application web complète 
                        avec React/Next.js en frontend et Odoo en backend. Création d'un module complet en Python 

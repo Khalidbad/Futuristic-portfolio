@@ -69,7 +69,7 @@ const Hero = () => {
           {/* Dynamic Title */}
           <div className="mb-8 animate-float" style={{ animationDelay: '0.4s' }}>
             <h2 className="text-2xl md:text-4xl font-futuristic text-soft-white mb-2">
-              Senior{' '}
+              {' '}
               <span className="text-electric-blue text-glow">
                 {displayText}
                 <span className="animate-pulse">|</span>

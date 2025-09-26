@@ -17,7 +17,7 @@ const Header = () => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
+    // { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' }
   ]
 
@@ -42,9 +42,9 @@ const Header = () => {
             <div className="w-10 h-10 bg-gradient-to-br from-electric-blue to-vibrant-magenta rounded-lg flex items-center justify-center">
               <span className="text-space-black font-bold text-xl font-futuristic">K</span>
             </div>
-            <span className="text-xl font-futuristic font-bold text-soft-white">
+            {/* <span className="text-xl font-futuristic font-bold text-soft-white">
               Khalid <span className="text-electric-blue">Dev</span>
-            </span>
+            </span> */}
           </div>
 
           {/* Desktop Navigation */}
